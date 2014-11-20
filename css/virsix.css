@@ -27,6 +27,23 @@ body {
     color: #ff8300;
 }
 
+.navbar-default .navbar-nav li a:hover{
+    color: #8e8e8e;
+}
+
+.navbar-toggle {
+    background-color: #5d5d5d;
+    border: 0px;
+}
+
+.navbar-toggle button:hover {
+    background-color: #5d5d5d;
+    border: 0px;
+}
+.icon-bar {
+    color: #ff8300;
+}
+
 .spacer {
     margin-top: 10vh;
     border-radius: 0px;
@@ -55,6 +72,7 @@ body {
     padding-top: 1.25vh;
     margin-top: 1em;
     float: left;
+    padding-bottom: .25em;
 }
 
 .jumbotron p {
@@ -70,4 +88,3 @@ body {
   height: 60px;
   background-color: #5d5d5d;
 }
-
