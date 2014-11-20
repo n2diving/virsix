@@ -1,4 +1,4 @@
-var virsixApp = angular.module('virsixApp', ['ngRoute', 'ui.bootstrap', 'angular-carousel']);
+var virsixApp = angular.module('virsixApp', ['ngRoute', 'ui.bootstrap']);
 
   // router config
   virsixApp.config(function($routeProvider, $locationProvider) {

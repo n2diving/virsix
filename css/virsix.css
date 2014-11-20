@@ -27,6 +27,15 @@ body {
     color: #ff8300;
 }
 
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+    color: #ff8300;
+}    
+
+li .ng-scope .active {
+    color: #ff8300;
+}    
+
+
 .navbar-default .navbar-nav li a:hover{
     color: #8e8e8e;
 }
@@ -79,10 +88,6 @@ body {
     font-size: 1.25em;
     float: left;
     clear: left;
-}
-
-carousel {
-    margin-bottom: 2vh;
 }
 
 .footer {

@@ -4,29 +4,37 @@
     <div class="col-xs-7 col-xs-offset-3">
       <h1 class="animated fadeInRightBig" style="display:inline">Current Games</h1>
 
+    <carousel ng-controller="CarouselController" class="animated fadeIn" interval="myInterval">
+      <slide>
+        <img src="images/1000-greatforest-1.jpg" style="margin:auto;">
+<!--         <div class="carousel-caption">
+          <p>Game 1</p>
+        </div> -->
+      </slide>
+      <slide>
+        <img src="images/1000-greatforest-2.jpg" style="margin:auto;">
+      </slide>
+      <slide>
+        <img src="images/1000-greatforest-3.jpg" style="margin:auto;">
+      </slide>
+      <slide>
+        <img src="images/1000-greatforest-4.jpg" style="margin:auto;">
+      </slide>
+      <slide>
+        <img src="images/wallball_3d.png" style="margin:auto;">
+      </slide>
+    </carousel>
 
-<ul rn-carousel class="image">
-  <li>slide #1</li>
-  <li>slide #2</li>
-  <li>slide #3</li>
-</ul>
 
-
-
-      <!-- <div ng-controller="carouselController">
-        <div style="height: 400px">
-          <carousel interval="myInterval">
-            <slide ng-repeat="slide in slides" active="slide.active">
-              <img ng-src="{{slide.image}}" style="margin:auto;">
-              <div class="carousel-caption">
-                <h4>Slide {{$index}}</h4>
-                <p>{{slide.text}}</p>
-              </div><!--end carousel caption-->
-           <!-- </slide>
-          </carousel>
-        </div><!--end div height style-->
-      </div><!--end carousel controller-->
 
     </div><!--end col-->
   </div><!--end row-->
 </div><!--end jumbotron-->
+
+<script type='text/javascript'>
+    $(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 2000
+         })
+    });    
+</script>
