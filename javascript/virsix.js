@@ -38,17 +38,17 @@ var virsixApp = angular.module('virsixApp', ['ngRoute', 'ui.bootstrap']);
   });
 
   virsixApp.controller('carouselController', function ($scope) {
-  $scope.myInterval = 5000;
-  var slides = $scope.slides = [];
-  $scope.addSlide = function() {
-    var newWidth = 600 + slides.length + 1;
-    slides.push({
-      image: 'http://placekitten.com/' + newWidth + '/300',
-      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
-    });
-  };
-  for (var i=0; i<4; i++) {
-    $scope.addSlide();
-  }
-});
+    $scope.myInterval = 5000;
+    var slides = $scope.slides = [];
+    $scope.addSlide = function() {
+      var newWidth = 600 + slides.length + 1;
+      slides.push({
+        image: ['file://Users/agormley/Downloads/VirsixWebsite/Photos/1000-greatforest-1.jpg', 'file://Users/agormley/Downloads/VirsixWebsite/Photos/1000-greatforest-3.jpg', 'file://Users/agormley/Downloads/VirsixWebsite/Photos/wallball_3d.png', 'file://Users/agormley/Downloads/VirsixWebsite/Photos/1000-greatforest-2.jpg', 'file://Users/agormley/Downloads/VirsixWebsite/Photos/1000-greatforest-4.jpg'],
+        text: ['More','Extra','Lots of','Surplus', 'more'][slides.length % 5] + ' ' +
+          ['Cats', 'Kittys', 'Felines', 'Cutes', 'more'][slides.length % 5]
+      });
+    };
+    for (var i=0; i<5; i++) {
+      $scope.addSlide();
+    }
+  });

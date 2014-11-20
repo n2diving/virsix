@@ -94,6 +94,14 @@ carousel {
 }
 
 .socials {
-    color: #fff;
-    padding: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+.socials a {
+    color: #353535;
+    padding: 1px;
+}
+
+.socials a:hover {
+    color: #707070;
 }
