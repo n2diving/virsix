@@ -1,10 +1,24 @@
-<!-- games.html -->
+<!--games.html-->
 <div class="jumbotron">
   <div class="row">
     <div class="col-xs-7 col-xs-offset-3">
       <h1 class="animated fadeInRightBig" style="display:inline">Current Games</h1>
 
       <p class="animated fadeIn">Virsix is a game company that bridges the gap between video games and the physical world.</p>
+
+      <div ng-controller="carouselController">
+        <div style="height: 400px">
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+              <img ng-src="{{slide.image}}" style="margin:auto;">
+              <div class="carousel-caption">
+                <h4>Slide {{$index}}</h4>
+                <p>{{slide.text}}</p>
+              </div><!--end carousel caption-->
+            </slide>
+          </carousel>
+        </div><!--end div height style-->
+      </div><!--end carousel controller-->
 
     </div><!--end col-->
   </div><!--end row-->
