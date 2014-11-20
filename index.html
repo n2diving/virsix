@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="virsixApp">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/virsix.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.js"></script>
+  <script src="javascript/ui-bootstrap-tpls-0.12.0.js"></script>
+  <script src="javascript/virsix.js"></script>
+
+  <base href="/">
+
+</head>
+
+<body ng-controller="mainController">
+
+  <header>
+    <img class="logo" src="/images/orange_logo.png" />
+    <nav class="navbar navbar-default spacer" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="/">
+          </a>
+        </div>
+
+          <div class="navbar-collapse bs-js-navbar-collapse" collapse="isCollapsed">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ng-click="isCollapsed = true" href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a ng-click="isCollapsed = true" href="#about"><i class="fa fa-shield"></i> About</a></li>
+            <li><a ng-click="isCollapsed = true" href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+          </ul>
+        </div><!--end navbar-nav-->
+      </div><!--end navbar collapse-->
+    </nav>
+  </header>
+
+
+  <div id="main">
+
+    <!--angular templates are rendered here in the ngview div-->
+
+    <div ng-view></div>
+
+  </div><!--end main-->
+
+  <div class="click">
+    <div class="claser"></div>
+  </div><!--end click-->
+
+</body>
+
+<footer>
+  Copyright &copy;2014
+</footer>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    background-image: url("/images/background_three.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+}
+
+.navbar {
+    position: relative;
+    background-image: url("/images/nav_image.jpg");
+    width: 100%;
+    height: auto;
+    background-position: left bottom;
+    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+}
+
+.navbar-default .navbar-nav li a{
+    color: #ff8300;
+}
+
+.spacer {
+    margin-top: 10vh;
+    border-radius: 0px;
+    background-color: #000000;
+    border: 0px;
+
+}
+
+.logo {
+    max-width: 25%;
+    min-width: 200px;
+    vertical-align: center;
+    position: absolute;
+    z-index: 1000;
+    margin-top: -8vh;
+    margin-left: 3vw;
+}
+
+.jumbotron {
+    background-color: rgba(0,0,0, .7);
+    color: #d6d6d6;
+}
+
+.jumbotron h1 {
+    font-size: 2em;
+    padding-top: 1.25vh;
+    margin-top: 1em;
+    float: left;
+}
+
+.jumbotron p {
+    font-size: 1.25em;
+    float: left;
+    clear: left;
+}
+
+
